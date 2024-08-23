@@ -33,7 +33,6 @@ import FlyingFox
 import FlyingFoxMacros
 import XCTest
 
-#if compiler(>=5.9)
 final class HTTPHandlerMacroTests: XCTestCase {
 
     func testHandler() async throws {
@@ -60,7 +59,7 @@ final class HTTPHandlerMacroTests: XCTestCase {
 }
 
 @HTTPHandler
-struct MacroHandler {
+private struct MacroHandler {
 
     @HTTPRoute("/ok")
     func didAppear() -> HTTPResponse {
@@ -97,5 +96,3 @@ private extension HTTPResponse {
         }
     }
 }
-
-#endif
