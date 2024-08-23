@@ -5,9 +5,29 @@
 
 # FlyingFoxMacros
 
-Macros for [`FlyingFox`](https://github.com/swhitty/FlyingFox) allowing handlers to annotate functions with routes:
+Macros for [`FlyingFox`](https://github.com/swhitty/FlyingFox) allowing handlers to annotate functions with routes.
+
+# Installation
+
+FlyingFoxMacros can be installed by using Swift Package Manager.
+
+**Note:** FlyingFox requires Swift 5.9 on Xcode 15+. It runs on iOS 13+, tvOS 13+, watchOS 8+, macOS 10.15+ and Linux. Windows 10 support is experimental.
+
+To install using Swift Package Manager, add this to the `dependencies:` section in your Package.swift file:
 
 ```swift
+.package(url: "https://github.com/swhitty/FlyingFox.git", .upToNextMajor(from: "0.16.0")),
+.package(url: "https://github.com/swhitty/FlyingFoxMacros.git", .upToNextMajor(from: "0.1.0"))
+```
+
+# Usage
+
+Methods can be annotated with `HTTPRoute` to automatically syntesise the `HTTPHandler`.
+
+```swift
+import FlyingFox
+import FlyingFoxMacros
+
 @HTTPHandler
 struct MyHandler {
 
