@@ -22,7 +22,7 @@ To install using Swift Package Manager, add this to the `dependencies:` section 
 
 # Usage
 
-Methods can be annotated with `HTTPRoute` to automatically syntesise the `HTTPHandler`.
+Methods can be annotated with `HTTPRoute` to automatically syntesise a `HTTPHandler`.
 
 ```swift
 import FlyingFox
