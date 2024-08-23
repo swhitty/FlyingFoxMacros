@@ -5,7 +5,7 @@
 
 # FlyingFoxMacros
 
-Macros for [`FlyingFox`](https://github.com/swhitty/FlyingFox) allowing handlers to annotate functions with routes.
+Macros for [FlyingFox](https://github.com/swhitty/FlyingFox) allowing handlers to annotate functions with routes.
 
 # Installation
 
